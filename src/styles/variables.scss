@@ -1,0 +1,39 @@
+/*!
+ * **************************************************************************************
+ *  Copyright © 2014-2018 Ontology Foundation Ltd.
+ *  All rights reserved.
+ *
+ *  This software is supplied only under the terms of a license agreement,
+ *  nondisclosure agreement or other written agreement with Ontology Foundation Ltd.
+ *  Use, redistribution or other disclosure of any parts of this
+ *  software is prohibited except in accordance with the terms of such written
+ *  agreement with Ontology Foundation Ltd. This software is confidential
+ *  and proprietary information of Ontology Foundation Ltd.
+ *
+ * **************************************************************************************
+ *
+ */
+
+// 按钮，table等控件的主色，应该抽出更多的变量
+$color-primary: #6987a7;
+
+$bg: #f5f5f5;
+$bg_blue: #d9e9ef;
+
+$white: #ffffff;
+$light_gray: #6987a7;
+$disable_gray: #b7c8ce;
+$custodian_blue: #0078fa;
+$custodian_manager_blue: #00336a;
+
+// account
+$escrowAccountColor: rgba(53, 155, 7, 1);
+$co-managedAccountColor: rgba(0, 209, 208, 1);
+$contentAreaColor: rgba(255, 255, 255, 1);
+
+//sidebar
+$menuBg: #f5f5f5;
+$subMenuBg: #f5f5f5;
+$sideBarWidth: 180px;
+$sideBarMarginLeft: 20px;
+$mainContainerPadding: 28px;

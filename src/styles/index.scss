@@ -1,0 +1,263 @@
+/*!
+ * **************************************************************************************
+ *  Copyright © 2014-2018 Ontology Foundation Ltd.
+ *  All rights reserved.
+ *
+ *  This software is supplied only under the terms of a license agreement,
+ *  nondisclosure agreement or other written agreement with Ontology Foundation Ltd.
+ *  Use, redistribution or other disclosure of any parts of this
+ *  software is prohibited except in accordance with the terms of such written
+ *  agreement with Ontology Foundation Ltd. This software is confidential
+ *  and proprietary information of Ontology Foundation Ltd.
+ *
+ * **************************************************************************************
+ *
+ */
+
+@import "./variables.scss";
+@import "./mixin.scss";
+@import "./transition.scss";
+@import "./element-ui.scss";
+@import "./custodian-texts.scss";
+@import "./custdian-btns.scss";
+
+body {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  font-family: OpenSans, Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei,
+    Arial, sans-serif;
+  background-color: $bg;
+
+  zoom: (1280 / 1440);
+  @media screen and (min-width: 1280px) {
+    zoom: (1280 / 1440);
+  }
+  @media screen and (min-width: 1366px) {
+    zoom: (1366 / 1440);
+  }
+  @media screen and (min-width: 1440px) {
+    zoom: 1;
+  }
+}
+
+html {
+  box-sizing: border-box;
+}
+
+.fixed-width-container {
+  width: 1440px - ($sideBarMarginLeft + $sideBarWidth + $mainContainerPadding * 2);
+}
+
+.no-fixed-width-container {
+  min-width: 1440px - ($sideBarMarginLeft + $sideBarWidth + $mainContainerPadding * 2);
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+div:focus {
+  outline: none;
+}
+
+a:focus,
+a:active {
+  outline: none;
+}
+
+a,
+a:focus,
+a:hover {
+  cursor: pointer;
+  color: inherit;
+  text-decoration: none;
+}
+
+.clearfix {
+  &:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+  }
+}
+/*******************************************/
+
+//table - start
+// 覆盖默认的el-table的样式
+
+.g-header th {
+  background-color: rgba(105, 135, 167, 1) !important;
+  font-size: 14px !important;
+  font-family: OpenSans !important;
+  font-weight: 600 !important;
+  color: $contentAreaColor !important;
+  line-height: 19px !important;
+
+  .el-table__column-filter-trigger i {
+    color: $white;
+  }
+
+  .sort-caret.ascending {
+    border-bottom-color: $white;
+  }
+
+  .sort-caret.descending {
+    border-top-color: $white;
+  }
+  > .cell.highlight {
+    color: $white;
+    font-weight: bold;
+  }
+}
+
+.g-notification-cell-title {
+  font-size: 16px;
+  font-family: OpenSans;
+  color: rgba(105, 135, 167, 1);
+  line-height: 22px;
+  cursor: pointer;
+}
+.g-notification-cell-time {
+  font-size: 16px;
+  font-family: OpenSans;
+  color: rgba(183, 200, 206, 1);
+  line-height: 22px;
+}
+
+.g-table-row-bold,
+.g-table-column-bold {
+  font-weight: bold !important;
+  font-size: 14px !important;
+  font-family: OpenSans-Semibold !important;
+  font-weight: 600 !important;
+  color: rgba(0, 51, 106, 1) !important;
+  line-height: 19px !important;
+}
+
+.g-table-row-regular,
+.g-table-column-regular {
+  font-weight: normal;
+}
+
+.g-table-row-light,
+.g-table-column-light {
+  font-size: 14px !important;
+  font-family: OpenSans !important;
+  color: rgba(105, 135, 167, 1) !important;
+  line-height: 19px !important;
+}
+
+.cell-negative {
+  font-size: 16px;
+  font-family: OpenSans-Semibold;
+  font-weight: 600;
+  color: rgba(0, 51, 106, 1);
+  line-height: 22px;
+}
+
+.cell-positive {
+  font-size: 16px;
+  font-family: OpenSans-Semibold;
+  font-weight: 600;
+  color: rgba(0, 209, 208, 1);
+  line-height: 22px;
+}
+
+.g-table-actions {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  align-items: center;
+  color: rgba(0, 120, 250, 1) !important;
+
+  .g-table-action {
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .g-table-separate {
+    margin: 0 5px;
+    background: rgba(0, 120, 250, 1);
+    height: 19px;
+    width: 1px;
+  }
+}
+//table - end
+/*******************************************/
+
+// el-button 使用 font-awesome 的时候图标不对其，先hack一下。
+.g-vertical {
+  vertical-align: top;
+  font-family: OpenSans-Semibold;
+}
+
+.g-pagination-area {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 64px;
+  background: $contentAreaColor;
+
+  //.el-pagination.is-background .el-pager li{
+  //  background-color: $white;
+  //}
+}
+
+.g-search-area {
+  width: 100%;
+  height: 64px;
+  background: $contentAreaColor;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+
+  .g-address {
+    width: 320px;
+    margin-right: 24px;
+  }
+}
+
+// 下载链接
+
+.g-btn-link {
+  width: 186px;
+  height: 36px;
+  border-radius: 18px;
+  border: 1px solid rgba(0, 120, 250, 1);
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  span {
+    font-size: 18px;
+    font-family: OpenSans-Semibold;
+    font-weight: 600;
+    color: rgba(0, 120, 250, 1);
+    line-height: 24px;
+  }
+}
+
+.g-text-link {
+  font-size: 16px;
+  font-family: OpenSans-Semibold;
+  font-weight: 600;
+  color: rgba(0, 120, 250, 1);
+  line-height: 22px;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

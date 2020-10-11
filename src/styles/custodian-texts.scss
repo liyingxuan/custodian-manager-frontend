@@ -1,0 +1,131 @@
+/*!
+ * **************************************************************************************
+ *  Copyright © 2014-2018 Ontology Foundation Ltd.
+ *  All rights reserved.
+ *
+ *  This software is supplied only under the terms of a license agreement,
+ *  nondisclosure agreement or other written agreement with Ontology Foundation Ltd.
+ *  Use, redistribution or other disclosure of any parts of this
+ *  software is prohibited except in accordance with the terms of such written
+ *  agreement with Ontology Foundation Ltd. This software is confidential
+ *  and proprietary information of Ontology Foundation Ltd.
+ *
+ * **************************************************************************************
+ *
+ */
+
+.cust__text-l-1,
+.cust__text-l-2,
+.cust__text-m-1,
+.cust__text-m-2,
+.cust__text-s-1,
+.cust__text-s-2 {
+  font-family: OpenSans, "PingFang SC", "微软雅黑", sans-serif;
+}
+.cust__text-l-1,
+.cust__text-m-1,
+.cust__text-s-1 {
+  color: rgba(0, 51, 106, 1);
+}
+.cust__text-l-2,
+.cust__text-m-2,
+.cust__text-s-2 {
+  color: rgba(105, 135, 167, 1);
+}
+
+.cust__text-l-1 {
+  font-size: 16px;
+  line-height: 22px;
+}
+.cust__text-l-2 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.cust__text-m-1 {
+  font-size: 14px;
+  line-height: 19px;
+}
+.cust__text-m-2 {
+  font-size: 14px;
+  line-height: 19px;
+}
+
+.cust__text-s-1 {
+  font-size: 12px;
+  line-height: 17px;
+}
+.cust__text-s-2 {
+  font-size: 12px;
+  line-height: 17px;
+}
+
+.cust__table-title {
+  padding: 24px 32px;
+  color: $custodian_blue;
+  background-color: white;
+  font-size: 38px;
+  font-family: OpenSans-Light, "PingFang SC", "微软雅黑", sans-serif;
+  font-weight: 300;
+  line-height: 52px;
+  border-bottom: solid 1px #b7c8ce;
+}
+.cust__table-title-manage {
+  padding: 24px 32px;
+  color: rgba(0, 51, 106, 1);
+  background-color: white;
+  font-size: 38px;
+  font-family: OpenSans-Light, "PingFang SC", "微软雅黑", sans-serif;
+  font-weight: 300;
+  line-height: 52px;
+  border-bottom: solid 1px #b7c8ce;
+}
+
+/**
+ * Custodian Notice 样式
+ *
+ * 用法：
+<div class="cust-notice__div">
+  <div class="cust-notice__tit">我是标题</div>
+  <div class="cust-notice__text">我是内容</div>
+</div>
+ */
+.cust-notice__div {
+  margin: 24px 92px;
+  padding: 24px;
+  width: 100%;
+  background: rgba(245, 245, 245, 1);
+}
+.cust-notice__tit {
+  margin-bottom: 16px;
+  font-size: 14px;
+  font-family: OpenSans-Semibold, "PingFang SC", "微软雅黑", sans-serif;
+  font-weight: 600;
+  color: rgba(0, 51, 106, 1);
+  line-height: 19px;
+}
+.cust-notice__text {
+  font-size: 14px;
+  font-family: OpenSans, "PingFang SC", "微软雅黑", sans-serif;
+  color: rgba(105, 135, 167, 1);
+  line-height: 19px;
+}
+
+/**
+ * Custodian Warning 样式
+ *
+ * 用法：
+<div class="cust-warning__div"><span>我是内容</span></div>
+ */
+.cust-warning__div {
+  margin: 24px 92px;
+  padding: 24px;
+  width: 100%;
+  background: rgba(200, 41, 9, 0.1);
+  border-radius: 2px;
+  border: 1px solid rgba(200, 41, 9, 1);
+  font-size: 14px;
+  font-family: OpenSans, "PingFang SC", "微软雅黑", sans-serif;
+  color: rgba(200, 41, 9, 1);
+  line-height: 19px;
+}

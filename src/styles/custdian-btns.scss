@@ -1,0 +1,30 @@
+/*!
+ * **************************************************************************************
+ *  Copyright © 2014-2018 Ontology Foundation Ltd.
+ *  All rights reserved.
+ *
+ *  This software is supplied only under the terms of a license agreement,
+ *  nondisclosure agreement or other written agreement with Ontology Foundation Ltd.
+ *  Use, redistribution or other disclosure of any parts of this
+ *  software is prohibited except in accordance with the terms of such written
+ *  agreement with Ontology Foundation Ltd. This software is confidential
+ *  and proprietary information of Ontology Foundation Ltd.
+ *
+ * **************************************************************************************
+ *
+ */
+
+.cust__primary-btn,
+.cust__primary-btn:hover {
+  padding: 5px 32px;
+  height: 32px;
+  background-color: $custodian_blue;
+  border-radius: 16px;
+  font-size: 16px;
+  font-family: OpenSans-Semibold, "PingFang SC", "微软雅黑", sans-serif;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 1);
+}
+.cust__primary-btn:hover {
+  opacity: 0.8;
+}

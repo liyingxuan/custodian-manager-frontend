@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="158px" height="48px" viewBox="0 0 158 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>download-for-ios Copy</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <polygon id="path-1" points="0 0.476715851 17.7165 0.476715851 17.7165 16.9999831 0 16.9999831"></polygon>
+        <polygon id="path-3" points="0.80328475 0.224 5.20406079 0.224 5.20406079 5.25263462 0.80328475 5.25263462"></polygon>
+    </defs>
+    <g id="Settings" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Setting/Google-authenbticator" transform="translate(-638.000000, -354.000000)">
+            <g id="Group-4" transform="translate(638.000000, 354.000000)">
+                <g id="download-for-ios">
+                    <rect id="Rectangle-4" fill="#000000" x="0" y="0" width="158" height="48" rx="3"></rect>
+                    <text id="DOWNLOAD-FOR" font-family="PingFangSC-Medium, PingFang SC" font-size="10" font-weight="400" fill="#FFFFFF">
+                        <tspan x="51.1283774" y="18">DOWNLOAD FOR</tspan>
+                    </text>
+                    <text id="DOWNLOAD-FOR-Copy" font-family="PingFangSC-Regular, PingFang SC" font-size="9.5" font-weight="normal" fill="#FFFFFF">
+                        <tspan x="83.7903774" y="36">(Enterprise)</tspan>
+                    </text>
+                    <text id="iOS" font-family="PingFangSC-Semibold, PingFang SC" font-size="16" font-weight="500" line-spacing="16" fill="#FFFFFF">
+                        <tspan x="51.1283774" y="39.8817995">iOS</tspan>
+                    </text>
+                    <g id="logo_apple" transform="translate(22.871623, 10.500000)">
+                        <g id="Group-3" transform="translate(0.000000, 5.776000)">
+                            <mask id="mask-2" fill="white">
+                                <use xlink:href="#path-1"></use>
+                            </mask>
+                            <g id="Clip-2"></g>
+                            <path d="M14.7975,6.8046 C14.7725,4.0536 17.0495,2.7156 17.1535,2.6526 C15.8645,0.7716 13.8645,0.5146 13.1625,0.4946 C11.4835,0.3186 9.8555,1.4996 8.9995,1.4996 C8.1275,1.4996 6.8105,0.5126 5.3915,0.5416 C3.5655,0.5696 1.8555,1.6276 0.9185,3.2696 C-1.0155,6.6176 0.4265,11.5386 2.2795,14.2446 C3.2065,15.5716 4.2895,17.0516 5.7075,16.9986 C7.0945,16.9416 7.6125,16.1146 9.2865,16.1146 C10.9455,16.1146 11.4315,16.9986 12.8775,16.9656 C14.3655,16.9416 15.3035,15.6336 16.1975,14.2956 C17.2695,12.7766 17.6995,11.2806 17.7165,11.2036 C17.6815,11.1916 14.8255,10.1026 14.7975,6.8046" id="Fill-1" fill="#FFFFFF" mask="url(#mask-2)"></path>
+                        </g>
+                        <g id="Group-6" transform="translate(8.000000, 0.776000)">
+                            <mask id="mask-4" fill="white">
+                                <use xlink:href="#path-3"></use>
+                            </mask>
+                            <g id="Clip-5"></g>
+                            <path d="M4.0656,3.7147 C4.8116,2.7817 5.3216,1.5127 5.1806,0.2237 C4.1006,0.2717 2.7506,0.9707 1.9726,1.8837 C1.2846,2.6877 0.6696,4.0067 0.8286,5.2447 C2.0416,5.3357 3.2876,4.6327 4.0656,3.7147" id="Fill-4" fill="#FFFFFF" mask="url(#mask-4)"></path>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

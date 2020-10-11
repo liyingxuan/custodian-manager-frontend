@@ -1,0 +1,65 @@
+/*!
+ * **************************************************************************************
+ *  Copyright © 2014-2018 Ontology Foundation Ltd.
+ *  All rights reserved.
+ *
+ *  This software is supplied only under the terms of a license agreement,
+ *  nondisclosure agreement or other written agreement with Ontology Foundation Ltd.
+ *  Use, redistribution or other disclosure of any parts of this
+ *  software is prohibited except in accordance with the terms of such written
+ *  agreement with Ontology Foundation Ltd. This software is confidential
+ *  and proprietary information of Ontology Foundation Ltd.
+ *
+ * **************************************************************************************
+ *
+ */
+
+@import "variables";
+/* 改变主题色变量 */
+$--color-primary: $color-primary;
+
+//使用g-header改变表头样式
+//$--table-header-background: $color-primary;
+//$--table-header-color: $white;
+
+/* 改变 icon 字体路径变量，必需 */
+$--font-path: "~element-ui/lib/theme-chalk/fonts";
+
+@import "~element-ui/packages/theme-chalk/src/index";
+
+//自定义steps，注意只覆盖需要改的部分，从step.scss搬过来的
+@include b(step) {
+  @include e(head) {
+    @include when(process) {
+      color: $white;
+      border-color: rgba(0, 120, 250, 1);
+      @include e(icon) {
+        background: rgba(0, 120, 250, 1);
+      }
+    }
+
+    @include when(finish) {
+      color: $white;
+      border-color: rgba(0, 120, 250, 1);
+      @include e(icon) {
+        background: rgba(0, 120, 250, 1);
+      }
+    }
+
+    // 下面的状态没有修改
+    @include when(wait) {
+      color: $--color-text-placeholder;
+      border-color: $--color-text-placeholder;
+    }
+
+    @include when(success) {
+      color: $--color-success;
+      border-color: $--color-success;
+    }
+
+    @include when(error) {
+      color: $--color-danger;
+      border-color: $--color-danger;
+    }
+  }
+}
